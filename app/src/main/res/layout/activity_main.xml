@@ -7,12 +7,28 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/activity_one_title"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/activity_one"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        android:textAlignment="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="24sp"
+        android:textColor="@color/black"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/activity_one_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/activity_one_title"
+        app:layout_constraintRight_toRightOf="@id/activity_one_title"
+        app:layout_constraintTop_toBottomOf="@id/activity_one_title"
+        android:layout_marginTop="16dp"
+        android:text="@string/press_title"/>
 
 </android.support.constraint.ConstraintLayout>
